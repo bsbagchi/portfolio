@@ -41,7 +41,7 @@ const projects = [
   {
     title: "Weather App",
     description: "A weather application that provides current conditions and forecasts with beautiful visualizations.",
-    image: "/placeholder.svg?height=500&width=800",
+    image: "/weather.jpeg?height=500&width=800",
     tags: ["React", "OpenWeather API", "Styled Components"],
     demoUrl: "#",
     repoUrl: "#",
@@ -51,8 +51,8 @@ const projects = [
     title: "Task Management Tool",
     description:
       "A Kanban-style task management application with drag-and-drop functionality and team collaboration features.",
-    image: "/placeholder.svg?height=500&width=800",
-    tags: ["Vue.js", "Vuex", "Tailwind CSS", "Firebase"],
+    image: "/task.jpeg?height=500&width=800",
+    tags: ["Angular.js", "Tailwind CSS", "Firebase"],
     demoUrl: "#",
     repoUrl: "#",
     featured: false,
@@ -61,7 +61,7 @@ const projects = [
     title: "Recipe Finder App",
     description:
       "An application that helps users discover recipes based on available ingredients and dietary preferences.",
-    image: "/placeholder.svg?height=500&width=800",
+    image: "/receipt.jpeg?height=500&width=800",
     tags: ["React", "Node.js", "MongoDB", "Express"],
     demoUrl: "#",
     repoUrl: "#",

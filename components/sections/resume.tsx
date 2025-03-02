@@ -8,52 +8,46 @@ import { Button } from "@/components/ui/button"
 import { Briefcase, GraduationCap, Download, Building, Calendar } from "lucide-react"
 
 const workExperience = [
-  {
-    title: "Senior Frontend Developer",
-    company: "TechCorp Inc.",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
-    description:
-      "Lead the development of the company's main product dashboard using Next.js and TypeScript. Implemented CI/CD pipelines and improved performance by 40%.",
-    skills: ["Next.js", "TypeScript", "Tailwind CSS", "Redux", "Jest"],
-  },
+
   {
     title: "Frontend Developer",
-    company: "WebSolutions Ltd.",
-    location: "Boston, MA",
-    period: "2020 - 2022",
+    company: "Atcuts Ltd.",
+    location: "Ahmedabad, India",
+    period: "2024 - 2025",
     description:
       "Developed and maintained multiple client websites with React. Created reusable component libraries and implemented responsive designs.",
-    skills: ["React", "JavaScript", "SCSS", "GraphQL", "Figma"],
+    skills: ["SvelteKit", "JavaScript", "Tailwind CSS"],
   },
   {
     title: "Junior Web Developer",
-    company: "Creative Agency",
-    location: "Chicago, IL",
-    period: "2018 - 2020",
+    company: "Signimus Technology",
+    location: "Indore, India",
+    period: "2023 - 2024",
     description:
       "Converted design mockups into fully functional responsive websites. Collaborated with designers to implement UI improvements.",
-    skills: ["HTML", "CSS", "JavaScript", "jQuery", "WordPress"],
+    skills: ["HTML", "CSS", "JavaScript","Nextjs", "Tailwind" ],
   },
 ]
 
 const education = [
   {
-    degree: "Master of Computer Science",
-    institution: "Tech University",
-    location: "Boston, MA",
-    period: "2016 - 2018",
+    degree: "Master of Computer Science [AIML]",
+    institution: "Chandigarh University",
+    location: "Chandigarh, India",
+    period: "2022 - 2024",
     description:
-      "Specialized in Human-Computer Interaction and Web Technologies. Thesis on modern frontend frameworks performance comparison.",
+      "At Tech University in Chandigarh, India (2022 - 2024), I specialized in Human-Computer Interaction and Web Technologies, with my thesis focusing on the performance comparison of modern frontend frameworks.",
   },
   {
-    degree: "Bachelor of Science in Software Engineering",
-    institution: "State University",
-    location: "Chicago, IL",
+    degree: "Bachelor of Computer Science",
+    institution: "Mats University",
+    location: "Raipur, India",
     period: "2012 - 2016",
-    description: "Graduated with honors. Participated in multiple hackathons and web development competitions.",
+    description:
+      "Graduated with honors from Mats University in Raipur, India (2012 - 2016), while actively participating in hackathons and web development competitions to sharpen my practical skills.",
   },
 ]
+
 
 export default function Resume() {
   const controls = useAnimation()
