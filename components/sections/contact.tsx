@@ -47,12 +47,12 @@ export default function Contact() {
     visible: { opacity: 1, y: 0 },
   }
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     const { name, value } = e.target
     setFormState((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault()
     setIsSubmitting(true)
 
@@ -100,11 +100,11 @@ export default function Contact() {
               {[
                 {
                   icon: <Mail className="h-5 w-5" />,
-                  text: "contact@brotidev.com",
-                  href: "mailto:contact@brotidev.com",
+                  text: "brotisunder9@gmail.com.com",
+                  href: "mailto:brotisunder9@gmail.com",
                 },
-                { icon: <Phone className="h-5 w-5" />, text: "+1 (555) 123-4567", href: "tel:+15551234567" },
-                { icon: <MapPin className="h-5 w-5" />, text: "San Francisco, CA", href: "#" },
+                { icon: <Phone className="h-5 w-5" />, text: "+91 7646870428", href: "tel:+917646870428" },
+                { icon: <MapPin className="h-5 w-5" />, text: "Ahmedabad, India", href: "https://maps.app.goo.gl/83QwWpaZSame2eqz6" },
               ].map((item) => (
                 <motion.a
                   key={item.text}
@@ -124,9 +124,9 @@ export default function Contact() {
               <h4 className="text-lg font-semibold mb-4">Connect with me</h4>
               <div className="flex gap-3">
                 {[
-                  { icon: <Github className="h-5 w-5" />, href: "https://github.com", label: "GitHub" },
-                  { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com", label: "LinkedIn" },
-                  { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com", label: "Twitter" },
+                  { icon: <Github className="h-5 w-5" />, href: "https://github.com/bsbagchi", label: "GitHub" },
+                  { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/broti-sunder-bagchi-aa46b623a/", label: "LinkedIn" },
+                  { icon: <Twitter className="h-5 w-5" />, href: "https://x.com/BrotiSunder", label: "Twitter" },
                 ].map((item) => (
                   <a
                     key={item.href}

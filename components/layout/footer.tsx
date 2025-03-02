@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-4">
               <Link
-                href="https://github.com"
+                href="https://github.com/bsbagchi"
                 target="_blank"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
@@ -25,7 +25,7 @@ export default function Footer() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/broti-sunder-bagchi-aa46b623a/"
                 target="_blank"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
@@ -33,7 +33,7 @@ export default function Footer() {
                 <span className="sr-only">LinkedIn</span>
               </Link>
               <Link
-                href="https://twitter.com"
+                href="https://x.com/BrotiSunder"
                 target="_blank"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
