@@ -1,6 +1,6 @@
-let userConfig = undefined
+let userConfig = undefined;
 try {
-  userConfig = await import('./v0-user-next.config')
+  userConfig = await import('./v0-user-next.config');
 } catch (e) {
   // ignore error
 }
@@ -10,9 +10,10 @@ let assetPrefix = '';
 let basePath = '';
 
 if (isGithubActions) {
+  // Getting the repository name from the GITHUB_REPOSITORY environment variable
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '');
-  assetPrefix = `/${repo}/`;
-  basePath = `/${repo}`;
+  assetPrefix = `/${repo}/`; // Set asset prefix to the repository name
+  basePath = `/${repo}`; // Set base path to the repository name
 }
 
 /** @type {import('next').NextConfig} */
@@ -24,22 +25,25 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: true, // Necessary when exporting statically
   },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  assetPrefix,
-  basePath,
-}
+  assetPrefix,  // GitHub Pages serves files from a subdirectory
+  basePath,     // GitHub Pages serves files from a subdirectory
+  output: 'export', // Static export for GitHub Pages deployment
+  
+  // If you're using a custom config, merge it here
+  ...userConfig,
+};
 
-mergeConfig(nextConfig, userConfig)
-
+// Merging custom user config if it exists
 function mergeConfig(nextConfig, userConfig) {
   if (!userConfig) {
-    return
+    return;
   }
 
   for (const key in userConfig) {
@@ -50,11 +54,13 @@ function mergeConfig(nextConfig, userConfig) {
       nextConfig[key] = {
         ...nextConfig[key],
         ...userConfig[key],
-      }
+      };
     } else {
-      nextConfig[key] = userConfig[key]
+      nextConfig[key] = userConfig[key];
     }
   }
 }
 
-export default nextConfig
+mergeConfig(nextConfig, userConfig);
+
+export default nextConfig;
